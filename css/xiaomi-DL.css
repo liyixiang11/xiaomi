@@ -1,0 +1,307 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+input {
+    outline: none;
+}
+
+.logo {
+    width: 1130px;
+    height: 98px;
+    margin: 0 auto;
+}
+
+.logo a {
+    display: block;
+    width: 200px;
+    height: 98px;
+}
+.Img{
+    
+    position: relative;
+}
+.bigImg {
+    position: relative;
+    display: block;
+    height: 530px;
+    text-align: center;
+    overflow: hidden;
+}
+.bigImg img{
+position: absolute;
+margin: auto;
+left: -9999px;
+right: -9999px;
+}
+.zz{
+    width: 1130px;
+    height: 524px;
+    position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin: 32px auto; 
+}
+.denglu {
+    width: 410px;
+    min-height: 524px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   background: white;
+   
+}
+.tou{
+    width: 410px;
+    padding: 27px 0 24px;
+    font-size: 24px;
+    background: white;
+    text-align: center;
+    
+}
+.tou span{
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+}
+.tou a {
+    text-align: center;
+    color: black;
+}
+.tou a:hover{
+    color:#f56600;
+}
+.inp{
+    width: 410px;
+    min-height: 226px;
+    background: white;
+}
+.z-inp,.m-inp{
+    width: 312px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+.btn{
+    margin: 0 auto;
+    background-color: #ef5b00;
+    width: 348px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.zhuce{
+    width: 346px;
+    margin: 0 auto;
+}
+.btn_gray {
+    color: #ef5b00;
+    border: 0 none;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    float: left;
+    font-size: 14px;
+
+}
+.right-link{
+   
+    float: right;
+    font-size: 14px;
+}
+.outer-link{
+    color: #000;
+}
+.outer-link:hover{
+    color: #ef5b00;
+}
+.oth_type_tit{
+    width: 348px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #e0e0e0;
+    position: absolute;
+    bottom: 66px;
+    left: 31px;
+}
+
+.oth_type_links{
+    width: 410px;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    
+}
+.icon_type{
+    margin: 0 17px;
+    width: 30px;
+    height: 30px;   
+    display: inline-block;
+    border-radius: 50%;
+}
+.btn_qq{
+    background: #0288d1;
+}
+.btn_weibo{
+    background: #d32f2f;
+}
+.btn_alipay{
+    background: #0ae;
+}
+.btn_weixin{
+    background: #00d20d;
+}
+.icon_default_qq{
+    width: 18px;
+    height: 18px;
+    background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat;
+    background-position: -19px 0;
+    display: block;
+    margin: 4px auto 0;
+}
+.icon_default_weibo{
+    width: 18px;
+    height: 18px;
+    background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat;
+    background-position: -38px 0;
+    display: block;
+    margin: 4px auto 0;
+}
+.icon_default_alipay{
+    width: 25px;
+    height: 18px;
+    margin-top: 6px;
+    margin-left: 4px;
+    background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat;
+    background-position: -57px 0;
+    display: block;
+    margin: 4px auto 0;
+}
+.icon_default_weixin{
+    width: 24px;
+    height: 18px;
+    margin-top: 6px;
+    background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat;
+    background-position: -83px 0;
+    display: block;
+    margin: 4px auto 0;
+}
+.wei {
+    background: #fff;
+    margin-top: 100px;
+    position: relative;
+
+    height: 80px;
+    text-align: center;
+}
+
+.lang-select-list{
+    margin: 0 auto;
+}
+.lang-select-list li{
+    display: inline-block;
+    color: #757575;
+}
+.lang-select-list a:hover{
+    color: #000;
+}
+.lang-select-list li a {
+    color: #757575;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.nf-intro{
+    height: 44px;
+    padding: 10px;
+    font-size: 14px;
+    color: #757575;
+}
+.beian-record-link{
+    display:inline-block;
+    color:  #757575;
+}
+.beian-record-link img{
+    display:inline-block;
+}
+.denglushibai,.denglushibai1{
+    color: #ef5b00;
+    width: 312px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom:10px;
+    padding-left:20px;
+    background: url(../images/sprite_login_02.jpg) no-repeat left bottom; 
+    display: none;
+}

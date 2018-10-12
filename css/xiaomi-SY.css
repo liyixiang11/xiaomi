@@ -1,0 +1,129 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+input {
+    outline: none;
+}
+.head_menu_con{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 260px;
+    z-index: 1001;
+    left: 0;
+    background: #fff;
+    display: none;
+    /* transition: 5s; */
+}
+.head_menu_con_ul li{
+    position: relative;
+    float: left;
+    width: 180px;
+    padding: 35px 12px 0;
+    text-align: center;
+}
+.head_menu_con span{
+    width: 80px;
+    margin: 0 auto;
+    height: 20px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    background: #fff;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    border-right: 1px solid #ccc;
+}
+.navs1 .head_menu_con_ul a {
+    padding: 0;
+}
+.head_menu_con img{
+    width: 160px;
+    height: 110px;
+}
+.head_menu_con_ul{
+    width: 1230px;
+    margin: 0 auto;
+}
+.zhanshi{
+    width: 1226px;
+    height: 170px;
+    
+    margin: 0 auto;
+    margin-top: 14px;
+}
+.zhanshi img {
+    margin-left: 13px;
+    width: 316px;
+    height: 170px;
+    display: inline-block;
+}
+.tubiao{
+    width: 234px;
+    height: 170px;
+    display: inline-block;
+    background: #333;
+}
+.zhanshiTP{
+    display: inline-block;
+}

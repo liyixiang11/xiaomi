@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline
+}
+
+html {
+    line-height: 1;
+    height: 100%
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: 400;
+    vertical-align: middle
+}
+
+q,
+blockquote {
+    quotes: none
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none
+}
+
+a img {
+    border: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+body {
+    font-family: microsoft yahei light, microsoft yahei, Helvetica, helvetica neue, Arial, sans-serif;
+    font-size: 14px;
+    background: #fff;
+    color: #323232;
+    height: 100%;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+img {
+    display: block;
+    border: 0;
+    font-size: 0
+}
+
+a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit
+}
+#header1 {
+    height: 100px;
+    width: 1226px;
+    margin: 0 auto;
+}
+.logo1 {
+    display: inline-block;
+    padding: 22px 0 ;
+    height: 55px;
+    width: 55px;
+}
+#header1 .navs1 {
+    display: inline-block;
+    height: 100px;
+    margin-left:179px; 
+}
+.search1 {
+    margin: 30px 0 0 0;
+    position: relative;
+    z-index: 9;
+    float: right;
+}
+.search1 input {
+    position: absolute;
+    top: 0;
+    right: 51px;
+    z-index: 1;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 48px;
+    outline: 0;
+    transition: all .2s;
+    float: right;
+}
+.search1 button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    line-height: 50px;
+    background: #fff;
+    color: #616161;
+    outline: 0;
+    transition: all .2s;
+    float: right;
+}
+
+.navs1>ul {
+    display: inline-block;
+    height: 88px;
+    font-size: 16px;
+}
+.navs1>ul>li {
+    float: left;
+    font-size: 16px;
+    color:black;
+}
+.navs1>ul>li:hover{
+    color: #ff6700;
+}
+.navs1 a {
+    display: block;
+    padding: 36px 10px 38px;
+}
+
