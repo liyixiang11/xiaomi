@@ -16,7 +16,7 @@ $btn.click(function () {
             }),
             success: function (data) {
                 if (data.code == 200) {
-                    location.href = 'xiaomi-DL.html';
+                    location.href = 'login.html';
                 }
             }
         })

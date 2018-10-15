@@ -60,7 +60,7 @@
         </div>
         <!-- 添加的物品 -->
         <div class="zhong">
-            <div class="item-box goods_con">
+            <!-- <div class="item-box goods_con">
                 <div class="goods_sel"> <input class="select_box xuanze" type="checkbox"> </div>
                 <div class="goods_kg">&nbsp;</div>
                 <div class="goods_name"> 小米8 屏幕指纹版 8GB内存 暮光金 128GB </div>
@@ -91,7 +91,7 @@
                 <div class="goods_action">
                     <a class="shanchu">x</a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- 结算 -->
         <div class="goods_con jiesuan">
@@ -109,24 +109,58 @@
 </body>
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <script>
-var shopCar =(function(){
+    var shopCar = (function () {
 
-    return {
-        init:function(){
+        return {
+            init: function () {
 
-        },
-        event:function(){
+            },
+            event: function () {
 
-        },
+            },
+        }
+    }())
+    var shopList = localStorage.shopList
+
+    shopList = JSON.parse(shopList)
+    
+    fn(shopList)
+
+    function fn(goods) {
+        for (var w = 0; w < goods.length; w++) {
+            var $_div = document.createElement("div")
+            console.log(($('.shuliang').val()))
+            $_div.innerHTML =
+                ` <div class="item-box goods_con">
+                <div class="goods_sel"> <input class="select_box xuanze" type="checkbox"> </div>
+                <div class="goods_kg">&nbsp;</div>
+                <div class="goods_name"> ${goods[w].goods_name} 屏幕指纹版  ${goods[w].goods_color} ${goods[w].goods_type} </div>
+                <div class="goods_price danjia">${goods[w].goods_price}</div>
+                <div class="goods_num" style="border: 1px solid #e0e0e0;line-height: 40px;margin-top: 15px;">
+
+                    <a class="J_minus"> - </a>
+                    <input class="shuliang" tyep="text" name="2183600020_0_buy" value="${goods[w].goods_num}">
+                    <a class="J_plus"> + </a>
+
+                </div>
+                <div class="goods_total zongfeiyong">${parseInt(goods[w].goods_num)*parseInt(goods[w].goods_price)+'元'}</div>
+                <div class="goods_action">
+                    <a class="shanchu">x</a>
+                </div>
+            </div>`
+            $('.zhong').append($_div)
+        }
     }
-}())
-
 
     $('.shanchu').click(function () {
+        var tr =$(this).parents(".item-box").index('.item-box');
+        shopList.splice(tr, 1);
+        localStorage.shopList = JSON.stringify(shopList);
         $(this).parents('.item-box').remove()
         if ($(this).parents('.item-box').find('.xuanze').prop("checked") == true) {
-            $('#J_cartTotalNum').text( $('#J_cartTotalNum').text()-1)
-            $('#J_selTotalNum').text( $('#J_selTotalNum').text()-$(this).parents('.item-box').find('.shuliang').val())
+            $('#J_cartTotalNum').text($('#J_cartTotalNum').text() - 1)
+            $('#J_selTotalNum').text($('#J_selTotalNum').text() - $(this).parents('.item-box').find('.shuliang')
+                .val())
             $('#J_cartTotalPrice').text(parseInt($('#J_cartTotalPrice').text()) - parseInt($(this).parents(
                 '.item-box').children('.zongfeiyong').text()))
         }
@@ -158,7 +192,11 @@ var shopCar =(function(){
 
     });
     $('.J_minus').click(function () {
+        
         if ($(this).siblings('.shuliang').val() >= 1) {
+            var tr =$(this).parents(".item-box").index('.item-box');
+        shopList[tr].goods_num=shopList[tr].goods_num-1;
+        localStorage.shopList = JSON.stringify(shopList);
             $(this).siblings('.shuliang').val($(this).siblings('.shuliang').val() - 1);
             $(this).parent('.goods_num').siblings('.zongfeiyong').text($(this).parent('.goods_num').siblings(
                     '.zongfeiyong').text().match(/\d+/) - $(this).parent('.goods_num').siblings('.danjia').text()
@@ -175,6 +213,9 @@ var shopCar =(function(){
     });
     $('.J_plus').click(function () {
         if ($(this).siblings('.shuliang').val() >= 0) {
+            var tr =$(this).parents(".item-box").index('.item-box');
+        shopList[tr].goods_num=shopList[tr].goods_num+1;
+        localStorage.shopList = JSON.stringify(shopList);
             $(this).siblings('.shuliang').val($(this).siblings('.shuliang').val() - 0 + 1);
             $(this).parent('.goods_num').siblings('.zongfeiyong').text(parseInt($(this).parent('.goods_num').siblings(
                 '.zongfeiyong').text().match(/\d+/)) + parseInt($(this).parent('.goods_num').siblings(
@@ -212,7 +253,6 @@ var shopCar =(function(){
         }
 
     })
-    
 </script>
 
 </html>
