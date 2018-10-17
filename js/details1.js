@@ -220,7 +220,6 @@ $('.fuwu3').click(function () {
 
 
 
-
 // 点击加入购物车按钮  创建localStorage
 $('.add_goods_btn').click(function () {
   var shopList = localStorage.shopList || '[]';
